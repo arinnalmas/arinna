@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+
+  </head>
+  <style>
+    body {margin: auto;}
+    h1 {color: blue;}
+    label {color:black;}
+    form-group {color: aqua;}
+    body {background-image:url(cruds.jpg);}
+  </style>
+  <body>
+    <div class="mainWrapper">
+    
+      <h1>Paraglider Info 🪂</h1>
+
+      <form>
+        <div class="form-group">
+          <label>File name</label>
+          <br><br>
+          <input id="fileName" type="text" class="form-control">
+        </div>
+        <br><br>
+
+        <div class="form-group">
+          <label>Content</label>
+          <br><br>
+          <textarea id="fileContents" class="form-control" rows="5"></textarea>
+        </div>
+        <br><br>
+      </form>
+      <br>
+      <button id="btnCreate" class="btn btn-default">Create</button> <!--to create file-->
+      <button id="btnRead" class="btn btn-default">Read</button> <!--to read the created file-->
+      <button id="btnDelete" class="btn btn-default">Delete</button> <!-- to delete the exist file-->
+      <button id="btnUpdate" class="btn btn-default">Update</button> <!--to update the file-->
+    </div>
+
+    <script src="crudmain.js">
+      
+    </script>
+    <a href="index.html">Back</a>
+  </body>
+</html>
